@@ -8,7 +8,7 @@ import secrets
 parser = argparse.ArgumentParser(description = 'Generate a Passphrase')
 
 parser.add_argument('-n', '--num', default = 6, type = int, help = 'number of words')
-parser.add_argument('-f', '--file', default = 'diceware.wordlist.txt', help = 'dictionary file name')
+parser.add_argument('-f', '--file', default = 'diceware.wordlist.txt', help = 'path to dictionary')
 parser.add_argument('-v', '--verbose', action = 'store_true', help = 'verbose output')
 
 args = parser.parse_args()
